@@ -9,5 +9,8 @@ mkdir ~/.vim/backups
 mkdir ~/.vim/swaps
 mkdir ~/.vim/undo
 
+<!-- update subdirectories like Vundle-->
+git submodule foreach git pull
+
 <!-- copy ~/Projects/Dotfiles/zsh/zshrc to ~/.zshrc -->
 ln -sFi ~/Projects/Dotfiles/zsh/zshrc ~/.zshrc
